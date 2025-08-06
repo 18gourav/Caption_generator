@@ -46,18 +46,23 @@ function UploadForm() {
     return(
         <>
           {isUploading && (
-           <div className="bg-gray-900/80 fixed inset-0 flex flex-col items-center justify-center">
-            <div className="text-white text-4xl ">Uploading....</div>
-            <div className="text-white/40 text-xl">please wait</div>
+           <div className="bg-black/80 fixed inset-0 flex flex-col items-center justify-center z-50">
+            <div className="bg-gray-900/95 rounded-2xl p-8 border border-gray-700 shadow-2xl">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 border-4 border-[#9747FF] border-t-white rounded-full animate-spin mb-6"></div>
+                <div className="text-white text-2xl font-semibold mb-2">Uploading your video...</div>
+                <div className="text-gray-400 text-lg">Please wait while we process your file</div>
+              </div>
+            </div>
            </div>
           )}
 
 
         <div className="flex justify-center">
-        <label className="flex gap-1 bg-green-600 px-5 py-3 rounded-full mt-8 cursor-pointer">
+        <label className="flex gap-2 bg-gradient-to-r from-[#9747FF] to-purple-600 hover:from-purple-600 hover:to-[#9747FF] px-8 py-4 rounded-full mt-8 cursor-pointer transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-white font-semibold">
            <UploadIcon/>
-           <input onChange={Upload} type="file" className="hidden"/>
-          Choose file</label>
+           <input onChange={Upload} type="file" className="hidden" accept="video/*"/>
+          Choose Video File</label>
         </div>
 
         </>
