@@ -52,6 +52,9 @@ function UploadForm() {
                 <div className="w-16 h-16 border-4 border-[#9747FF] border-t-white rounded-full animate-spin mb-6"></div>
                 <div className="text-white text-2xl font-semibold mb-2">Uploading your video...</div>
                 <div className="text-gray-400 text-lg">Please wait while we process your file</div>
+                <div className="mt-4 w-64 bg-gray-700 rounded-full h-2">
+                  <div className="bg-gradient-to-r from-[#9747FF] to-purple-400 h-2 rounded-full animate-pulse" style={{width: '70%'}}></div>
+                </div>
               </div>
             </div>
            </div>
