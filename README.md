@@ -1,3 +1,5 @@
+Live Link- https://caption-generator-mocha.vercel.app/
+
 # Caption Generator 🎬✨
 
 An AI-powered web application that automatically generates and applies captions to your videos using AWS Transcribe and FFmpeg. Upload a video, get automated transcription, customize the caption appearance, and download your captioned video - all in your browser!
